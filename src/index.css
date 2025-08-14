@@ -1,1 +1,39 @@
 @import 'tailwindcss';
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --font-publicsans: 'Public Sans', 'sans-serif';
+
+    --color-beige-500: #98908b;
+    --color-beige-100: #f8f4f0;
+    --color-grey-900: #201f24;
+    --color-grey-500: #696868;
+    --color-grey-300: #b3b3b3;
+    --color-grey-100: #f2f2f2;
+}
+
+@layer components {
+    .text-preset-1 {
+        @apply text-[3.2rem] tracking-[0px] leading-[120%] font-bold font-publicsans;
+    }
+
+    .text-preset-2 {
+        @apply text-[2rem] tracking-[0px] leading-[120%] font-bold font-publicsans;
+    }
+
+    .text-preset-3 {
+        @apply text-[1.6rem] tracking-[0px] leading-[150%] font-bold font-publicsans;
+    }
+    .text-preset-4 {
+        @apply text-[1.4rem] tracking-[0px] leading-[150%] font-publicsans;
+    }
+
+    .text-preset-5 {
+        @apply text-[1.2rem] tracking-[0px] leading-[150%] font-publicsans;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
